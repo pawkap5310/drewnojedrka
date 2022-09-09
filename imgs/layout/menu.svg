@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>template/icon/menu-bianco</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icone/menu" transform="translate(-17.000000, -18.000000)" fill="#FFFFF9" fill-rule="nonzero">
+            <path d="M17,26.875 L17,25.4472656 L29.75,25.4472656 L29.75,26.875 L17,26.875 Z M17,23.3222656 L17,21.9277344 L29.75,21.9277344 L29.75,23.3222656 L17,23.3222656 Z M17,18.375 L29.75,18.375 L29.75,19.8027344 L17,19.8027344 L17,18.375 Z" id="template/icon/menu-bianco"></path>
+        </g>
+    </g>
+</svg>

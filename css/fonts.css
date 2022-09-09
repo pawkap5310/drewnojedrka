@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url('../fonts/librefranklin-extralight-webfont.woff2') format('woff2'), url('../fonts/librefranklin-extralight-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url('../fonts/librefranklin-light-webfont.woff2') format('woff2'), url('../fonts/librefranklin-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url('../fonts/librefranklin-regular-webfont.woff2') format('woff2'), url('../fonts/librefranklin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreFranklin';
+    src: url('../fonts/librefranklin-medium-webfont.woff2') format('woff2'), url('../fonts/librefranklin-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}

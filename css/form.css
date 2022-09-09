@@ -1,0 +1,446 @@
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+input,
+.input,
+textarea,
+select {
+    height: 56px;
+    line-height: 26px;
+    padding: 15px;
+    margin: 0;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    background: #000;
+    -webkit-appearance: none;
+}
+
+textarea {
+    min-height: 108px;
+    resize: vertical;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+button[type="submit"],
+input[type="submit"] {
+    padding: 19px 40px;
+    border: none;
+    border-spacing: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: .88px;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    background: #FFF;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+.no-touch button:hover,
+.no-touch input[type="submit"]:hover {
+    opacity: .6;
+}
+
+/* forzo il calendario in webkit */
+
+input[type="date"].onfocus {
+    ::-webkit-calendar-picker-indicator {
+        display: block;
+    }
+}
+
+button:focus,
+input[type="submit"]:focus,
+select:focus {
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #868686;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+fieldset,
+.fieldset {
+    position: relative;
+}
+
+form label,
+form .label {
+    width: 48.5%;
+    width: calc(50% - 10px);
+    margin: 0 0 28px 0;
+    display: block;
+    position: relative;
+    float: left;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form .label.float_right {
+    float: right;
+}
+
+form label.w25,
+form .label.w25 {
+    width: 23.5%;
+    width: calc(25% - 10px);
+    margin-left: 6px;
+}
+
+form label.float_right+.w25,
+form .label.float_right+.w25 {
+    margin-left: 0;
+}
+
+form label.float_right+.w25+.w25,
+form .label.float_right+.w25+.w25 {
+    float: left;
+}
+
+form label.w100,
+form .label.w100 {
+    width: auto;
+    float: none;
+    clear: both;
+}
+
+.js .label_select {
+    overflow: hidden;
+}
+
+.label_select .select_cover {
+    width: 40px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    background: #FFF url(/imgs/layout/freccia-select-FFFFFF.svg) right 10px top 50% no-repeat;
+}
+
+.js .label_select .select_cover {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #B6B1AD;
+    border-left: 0;
+}
+
+.label_checkbox,
+.label_radio {
+    width: auto;
+    padding-left: 26px;
+    margin: 0 15px 0 0;
+    display: inline-block;
+    float: none;
+    position: relative;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.label_radio~.label_radio,
+.label_checkbox~.label_checkbox {
+    margin-left: 75px;
+}
+
+.label_checkbox:before,
+.label_radio:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #FFF;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 1em;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.label_checkbox:after,
+.label_radio:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: none;
+    position: absolute;
+    left: 3px;
+    top: 1em;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background: #FFF;
+}
+
+.label_radio:before,
+.label_radio:after {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked+.label_checkbox:after,
+input[type="radio"]:checked+.label_radio:after {
+    display: block;
+}
+
+form .placeholder {
+    line-height: 17px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: .11px;
+    color: #838383;
+}
+
+form .placeholder_fixed {
+    line-height: 17px;
+    margin-bottom: 1px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: .11px;
+    color: #838383;
+}
+
+.placeholder_fixed+span.input {
+    line-height: 20px;
+    padding: 0;
+    border-bottom: 1px solid #222;
+    border-bottom: 1px solid rgba(0, 0, 0, .81);
+    display: block;
+    color: #222;
+    color: rgba(0, 0, 0, .81);
+}
+
+.js form .placeholder {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    z-index: 5;
+}
+
+.js form .placeholder~select {
+    position: relative;
+    z-index: 6;
+    background: none;
+}
+
+.required .placeholder:after,
+.required .placeholder_fixed:after,
+.required .label_group:after {
+    content: '*';
+}
+
+form label.hasError {
+    color: #DD0000;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="password"],
+form input[type="url"],
+form input[type="file"],
+form textarea,
+form select {
+    width: 100%;
+    border-bottom: 1px solid #666;
+}
+
+form select {
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 20;
+    -webkit-appearance: menulist-button;
+    background: none;
+}
+
+.js form select {
+    width: 135%;
+    width: calc(100% + 35px);
+}
+
+input[type="checkbox"],
+input[type="radio"],
+.input_checkbox,
+.input_radio {
+    width: 15px;
+    height: 15px;
+    margin-right: -18px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    opacity: 0;
+}
+
+.campi_obbligatori,
+.privacy_box,
+.privacy_box .label_checkbox {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 13px;
+    color: #FFF;
+    clear: both;
+}
+
+.campi_obbligatori {
+    font-size: 12px;
+}
+
+.privacy_box .label_checkbox {
+    text-transform: none;
+}
+
+.privacy_box .label_checkbox:before,
+.privacy_box .label_checkbox:after {
+    margin-top: -5px;
+}
+
+.newsletter_box {
+    margin: 15px 0 0 0;
+}
+
+.newsletter_box label {
+    margin-left: -1px;
+}
+
+.reset_btn {
+    line-height: 50px;
+    margin: 30px 57px 0 0;
+    display: block;
+    float: right;
+    position: relative;
+    right: 50%;
+    font-weight: normal;
+}
+
+.reset_btn+.submit_btn {
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 0;
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+/**
+    GESTIONE ERRORI
+*/
+
+form input[type="text"].has_error,
+form input[type="email"].has_error,
+form input[type="number"].has_error,
+form input[type="tel"].has_error,
+form input[type="date"].has_error,
+form input[type="password"].has_error,
+form input[type="url"].has_error,
+form input[type="file"].has_error,
+form textarea.has_error,
+form select.has_error {
+    color: #DD0000;
+    outline: 2px solid #DD0000;
+}
+
+input[type="checkbox"].has_error+.label_checkbox,
+input[type="radio"].has_error+.label_radio {
+    font-style: italic;
+    color: #DD0000;
+}
+
+@media only screen and (max-width: 768px) {
+    form .campi_obbligatori {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    form label,
+    form label.float_left,
+    form label.float_right,
+    form .label,
+    form .label.float_left,
+    form .label.float_right {
+        width: calc(50% - 15px);
+    }
+    form label.w25,
+    form .label.w25 {
+        width: 47%;
+        width: calc(50% - 15px);
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    form label,
+    form label.float_left,
+    form label.float_right,
+    form .label,
+    form .label.float_left,
+    form .label.float_right {
+        width: 100%;
+    }
+    form label.w25,
+    form .label.w25 {
+        width: 47%;
+        width: calc(50% - 8px);
+        margin-left: 16px;
+    }
+    .reset_btn {
+        margin: 30px 0 0 0;
+        display: inline-block;
+        float: none;
+        right: 0;
+        display: none;
+    }
+    .reset_btn+.submit_btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+        left: 0;
+    }
+    .label_radio~.label_radio,
+    .label_checkbox~.label_checkbox {
+        margin-left: 0;
+    }
+}

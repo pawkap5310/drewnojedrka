@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>template/icon/freccia-bianca</title>
+    <desc>Created with Sketch.</desc>
+    <g id="template/icon/freccia-bianca" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icona/arrow" transform="translate(20.000000, 15.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M13.2421875,20.2578125 C13.0078113,20.0234363 13.0078113,19.7890637 13.2421875,19.5546875 L17.1679688,15.21875 L0.46875,15.21875 C0.156248438,15.21875 0,15.0625016 0,14.75 C0,14.4374984 0.156248438,14.28125 0.46875,14.28125 L17.1679688,14.28125 L13.2421875,9.9453125 C13.0078113,9.71093633 13.0078113,9.47656367 13.2421875,9.2421875 C13.4765637,9.00781133 13.7109363,9.00781133 13.9453125,9.2421875 C17.0312654,12.640642 18.5937498,14.3593748 18.6328125,14.3984375 C18.7109379,14.4765629 18.75,14.5937492 18.75,14.75 C18.75,14.9062508 18.7109379,15.0234371 18.6328125,15.1015625 L13.9453125,20.2578125 C13.8671871,20.3359379 13.7500008,20.375 13.59375,20.375 C13.4374992,20.375 13.3203129,20.3359379 13.2421875,20.2578125 Z" id="template/icon/freccia-media"></path>
+        </g>
+        <circle id="Oval" stroke="#FFFFFF" cx="30" cy="30" r="29.5"></circle>
+    </g>
+</svg>
