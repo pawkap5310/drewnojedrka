@@ -84,14 +84,14 @@ body {
     padding: 0 65px;
 }
 
-.gallery-wrap img{
+.gallery-wrap .gallery-child {
     display: block;
     height: fit-content;
     width: 29%;
     margin-bottom: 30px;
 }
 
-.gallery-wrap img:nth-child(3n+2) {
+.gallery-wrap .gallery-child:nth-child(3n+2) {
     position: relative;
     top: -40px;
 }
@@ -428,7 +428,7 @@ button.reset {
     width: 29%;
     margin-bottom: 30px;
     position: relative;
-    top: -40px;
+    
 }
 
 .table-link img {
@@ -567,6 +567,14 @@ Se serve, aggiungerlo anche in altre pagine */
 .desc-container {
     margin: 40px auto 0;
     font-size: 18px;  
+}
+
+.desc-container p {
+    margin: 0 0;
+}
+
+.desc-container p:nth-child(2) {
+    margin: 20px 0 0;
 }
 
 .tables-gallery img {
