@@ -89,11 +89,51 @@ body {
     height: fit-content;
     width: 29%;
     margin-bottom: 30px;
+    position: relative;
+}
+
+.gallery-wrap a.gallery-child:hover {
+    opacity: 1;
+}
+
+.gallery-wrap a.gallery-child:hover::after {
+    content: '';
+    display: flex;
+    background: #000;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+.gallery-wrap .gallery-child::before {
+    content: 'Zobacz więcej';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    opacity: 0;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 .gallery-wrap .gallery-child:nth-child(3n+2) {
     position: relative;
     top: -40px;
+}
+
+.gallery-wrap .gallery-child:hover::before {
+    opacity: 1;
+    transition: all .3s ease;
+    z-index: 100;
 }
 
 table {
