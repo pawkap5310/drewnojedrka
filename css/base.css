@@ -1448,14 +1448,14 @@ Se serve, aggiungerlo anche in altre pagine */
     .gallery-wrap a.gallery-child:hover::after {
         content: '';
         display: block;
-        width: 32px;
+        width: 22px;
         min-height: 30px!important;
         height: 30px!important;
         position: absolute;
         top: auto;
         right: 3px!important;
-        bottom: 10px!important;
-        background: url('./../imgs/content/tap.png') no-repeat;
+        bottom: 3px!important;
+        background: url('./../imgs/content/tap22.png') no-repeat;
         opacity: 1;
         transition: all .4s ease;
     }
