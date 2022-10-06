@@ -1433,3 +1433,30 @@ Se serve, aggiungerlo anche in altre pagine */
         text-align: center;
     }
 }
+
+@media (max-width: 767px) {
+    .gallery-wrap .gallery-child {
+        top: 0!important;
+        width: 40%!important;
+    }
+
+    .gallery-wrap .gallery-child::before {
+        display: none!important;
+    }
+
+    .gallery-wrap a.gallery-child::after,
+    .gallery-wrap a.gallery-child:hover::after {
+        content: '';
+        display: block;
+        width: 32px;
+        min-height: 30px!important;
+        height: 30px!important;
+        position: absolute;
+        top: auto;
+        right: 3px!important;
+        bottom: 10px!important;
+        background: url('./../imgs/content/tap.png') no-repeat;
+        opacity: 1;
+        transition: all .4s ease;
+    }
+}
