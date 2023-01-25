@@ -624,6 +624,7 @@ Se serve, aggiungerlo anche in altre pagine */
 .tables-gallery {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
 }
 
 .mainpic {
