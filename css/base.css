@@ -1461,3 +1461,18 @@ Se serve, aggiungerlo anche in altre pagine */
         transition: all .4s ease;
     }
 }
+@media (max-width: 1300px) {
+
+    #cats_slider .slick-slide+.slick-slide {
+    margin-left: 40px;
+    }
+    
+    #cats_slider li figure img {
+    max-width: 25vw;
+    max-height: 380px;
+    }
+    
+    #arrows_container {
+    display: none;
+    }
+}
